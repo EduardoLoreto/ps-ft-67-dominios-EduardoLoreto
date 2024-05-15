@@ -11,13 +11,14 @@ window.onload = function() {
   let noun = ["jogger", "racoon"];
   let domains = [""];
 
-  for (let i = 0; 1 < pronoun.length; i++) {
-    for (let j = 0; 1 < adj.length; j++){
-      for (let k = 0; 1 < noun.length; k++){
+  for (let i = 0; i < pronoun.length; i++) {
+    for (let j = 0; j < adj.length; j++) {
+      for (let k = 0; k < noun.length; k++) {
         console.log(pronoun[i] + adj[j] + noun[k]);
         const domain = pronoun[i] + adj[j] + noun[k] + ".com";
-        domains.push(domain);              
+        domains.push(domain);
       }
     }
   }
+  console.log(domains);
 };
